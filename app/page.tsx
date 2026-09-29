@@ -107,7 +107,7 @@ export default function Home() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           >
             <div className={styles.imageFrame}>
-              <Image src="/temple_cutout.png" alt="Temple front view" fill priority className={styles.heroImage} />
+              <Image src="/temple_cutout.png" alt="Temple front view" fill priority sizes="(max-width: 768px) 100vw, 50vw" className={styles.heroImage} />
             </div>
 
             <UpcomingEventOverlay />
@@ -193,7 +193,7 @@ export default function Home() {
                 variants={reveal}
               >
                 <div className={styles.ritualImageWrap}>
-                  <Image src={image} alt={title} fill className={styles.ritualImage} />
+                  <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={styles.ritualImage} />
                 </div>
                 <div className={styles.ritualContent}>
                   <div className={styles.ritualHeader}>
@@ -221,7 +221,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
               >
                 <div className={styles.galleryImageWrap}>
-                  <Image src={item.src} alt={item.alt} fill className={styles.galleryImage} />
+                  <Image src={item.src} alt={item.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={styles.galleryImage} />
                 </div>
                 <figcaption>{item.label}</figcaption>
               </motion.figure>

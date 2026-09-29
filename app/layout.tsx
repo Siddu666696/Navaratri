@@ -61,7 +61,7 @@ const organizationSchema = {
 export const metadata: Metadata = {
   title: `${copy.meta.title.te} | ${copy.meta.title.en}`,
   description: `${copy.meta.description.te} ${copy.meta.description.en}`,
-  ...(site.siteUrl ? { metadataBase: new URL(site.siteUrl) } : {}),
+  metadataBase: new URL(site.siteUrl || "https://navaratri.vercel.app"),
   openGraph: {
     title: copy.meta.title.en,
     description: copy.meta.description.en,
