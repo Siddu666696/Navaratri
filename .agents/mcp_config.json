@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "react-bits": {
+      "command": "npx",
+      "args": ["-y", "@youhai/react-bits-mcp-server"]
+    }
+  }
+}
